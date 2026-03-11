@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killers On-Duty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Hamburger menu toggle */
+        #nav-toggle:checked ~ nav { display: flex; }
+    </style>
+</head>
+
+<body class="bg-[#0B0F19]">
+
+    <!-- HEADER -->
+    <header class="flex w-full justify-between items-center py-4 px-6 md:px-12 shadow-lg fixed z-20 bg-[#0B0F19]">
+
+        <h2 class="text-blue-500 text-3xl md:text-4xl font-bold relative">
+            Killers
+            <span class="bg-[#3B82F6] absolute text-white text-sm flex items-center font-semibold -top-1 -right-[100px] px-5 w-max py-0 rounded-full">
+                On-Duty
+            </span>
+        </h2>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center ml-12">
+            <ul class="flex space-x-5 items-center">
+                <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Home</a></li>
+                <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">About</a></li>
+                <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Operations</a></li>
+                <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Hit List</a></li>
+                <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">The Squad</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile hamburger -->
+        <label for="mobile-menu" class="lg:hidden text-white text-2xl cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <button class="hidden lg:block py-2 px-8 rounded-xl bg-[#3B82F6] text-white text-lg font-semibold hover:bg-blue-700 transition-all">
+            Get A HEADSHOT <i class="fa-solid fa-crosshairs"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <input type="checkbox" id="mobile-menu" class="hidden peer">
+    <nav class="hidden peer-checked:flex flex-col fixed top-[72px] left-0 w-full z-40 bg-[#0B0F19] z-10 px-6 py-4 shadow-lg lg:hidden">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Home</a></li>
+            <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">About</a></li>
+            <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Operations</a></li>
+            <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">Hit List</a></li>
+            <li><a href="#" class="text-lg text-white font-semibold hover:text-blue-500 transition-all">The Squad</a></li>
+            <li><button class="py-2 px-8 rounded-xl bg-[#3B82F6] text-white text-lg font-semibold hover:bg-blue-700 transition-all w-full mt-2">
+                Get A HEADSHOT <i class="fa-solid fa-crosshairs"></i>
+            </button></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="w-full min-h-[110vh] py-[120px] md:py-[150px] px-6 md:px-10 flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-5 relative bg-[#111827]">
+
+            <i class="fa-solid fa-crosshairs absolute top-[87px] left-[96px] text-[50px] opacity-40 text-white hidden md:block"></i>
+            <i class="fa-solid fa-crosshairs absolute top-[208px] left-[259px] text-[50px] opacity-20 text-white hidden md:block"></i>
+            <i class="fa-solid fa-crosshairs absolute top-[330px] left-[198px] text-[50px] opacity-30 text-white hidden md:block"></i>
+
+            <div class="space-y-[30px] w-full lg:w-[50%] z-10">
+                <h1 class="text-[36px] md:text-[50px] text-white font-bold">
+                    We Always <span class="text-[#3B82F6]">SILENCE THE TARGET</span> — No Witnesses Left Behind
+                </h1>
+                <p class="text-[#9CA3AF]">Elite feline operatives. Zero trails. We provide fully integrated cat assassin services — from silent infiltration and strategic hairball deployment to complete owner neutralization. Our fur-covered field agents handle every contract with ruthless precision and zero regrets.</p>
+                <ul class="flex flex-wrap gap-y-3 gap-x-8 items-start text-white font-semibold">
+                    <li><i class="fa-solid fa-check bg-[#16A34A] text-white p-1 rounded-full"></i> 10+ Years in the Shadows</li>
+                    <li><i class="fa-solid fa-check bg-[#16A34A] text-white p-1 rounded-full"></i> 500+ Clean Contracts</li>
+                    <li><i class="fa-solid fa-check bg-[#16A34A] text-white p-1 rounded-full"></i> Purr-fessional Team</li>
+                </ul>
+                <ul class="flex flex-col sm:flex-row gap-4">
+                    <li><button class="py-[15px] rounded-lg px-[30px] bg-[#3B82F6] text-white font-semibold text-[18px] hover:bg-[#2659ab] hover:shadow-lg transition-all w-full sm:w-auto">
+                        Order a Hit Now</button></li>
+                    <li><button class="hover:text-[#3B82F6] text-white py-[15px] px-[30px] border-2 hover:border-[#3B82F6] transition-all rounded-lg w-full sm:w-auto">
+                        <i class="fa-solid fa-caret-right"></i> Watch Us Operate</button></li>
+                </ul>
+            </div>
+
+            <div class="relative w-full lg:w-[600px] h-[280px] md:h-[350px] bg-cover bg-center rounded-2xl shadow-lg shadow-gray-600 z-10"
+                style="background-image: url('./images/5.jpg');">
+                <div class="absolute bottom-[-10px] left-[-20px] bg-[#1F2937] flex space-x-4 items-center px-[20px] py-[5px] shadow-2xl rounded-xl">
+                    <i class="fa-solid fa-gun bg-[#0B0F19] text-[#2659ab] p-2 rounded-full text-[22px]"></i>
+                    <span>
+                        <h2 class="text-white text-[12px]">Confirmed Eliminations</h2>
+                        <h3 class="font-bold text-[20px] text-white">+500</h3>
+                    </span>
+                </div>
+            </div>
+
+            <div class="absolute inset-0 -left-5 p-0" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, #ffffff2f 60px, #ffffff2f 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, #ffffff2f 60px, #ffffff2f 61px);"></div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="py-[70px] px-6 md:px-12 text-center">
+            <h2 class="mb-2 text-[28px] md:text-[36px] font-bold text-[#E5E7EB]">Our Covert Operations</h2>
+            <p class="text-gray-400">We offer a full spectrum of shadow services — each one deadlier than the last.</p>
+            <hr class="h-1 bg-[#3B82F6] border-none w-20 mt-4 rounded-lg m-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-8">
+
+                <div class="group text-left space-y-5 border-blue-100 border-2 p-9 rounded-2xl hover:border-[#3B82F6] hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">
+                    <i class="fa-solid fa-cat text-[30px] p-4 px-10 flex justify-center items-center rounded-lg bg-[#3B82F6] group-hover:bg-white group-hover:text-[#3B82F6] transition-all duration-300 text-white"></i>
+                    <h2 class="text-[24px] font-bold text-gray-200">Silent Paw Infiltration</h2>
+                    <p class="text-[16px] text-gray-400">Our agents slip through any perimeter undetected. No alarms, no barks, no witnesses — just the faint smell of tuna and existential dread.</p>
+                    <ul class="space-y-3">
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Zero-Trace Entry</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Night Vision Included</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> 9-Life Guaranteed Escape</li>
+                    </ul>
+                </div>
+
+                <div class="group text-left space-y-5 border-blue-100 border-2 p-9 rounded-2xl hover:border-[#7C3AED] hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">
+                    <i class="fa-solid fa-skull text-[30px] p-4 px-10 flex justify-center items-center rounded-lg bg-[#7C3AED] group-hover:bg-white group-hover:text-[#7C3AED] transition-all duration-300 text-white"></i>
+                    <h2 class="text-[24px] font-bold text-gray-200">Psychological Warfare</h2>
+                    <p class="text-[16px] text-gray-400">Staring. Knocking things off counters. 3AM sprints for no reason. We break the target mentally before the final blow is ever needed.</p>
+                    <ul class="space-y-3">
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Sleep Deprivation Ops</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Void Staring Protocol</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Hairball Surprise Delivery</li>
+                    </ul>
+                </div>
+
+                <div class="group text-left space-y-5 border-blue-100 border-2 p-9 rounded-2xl hover:border-[#16A34A] hover:shadow-lg hover:shadow-slate-500 transition-all duration-300">
+                    <i class="fa-solid fa-crosshairs text-[30px] p-4 px-10 flex justify-center items-center rounded-lg bg-[#16A34A] group-hover:bg-white group-hover:text-[#16A34A] transition-all duration-300 text-white"></i>
+                    <h2 class="text-[24px] font-bold text-gray-200">The Clean Headshot</h2>
+                    <p class="text-[16px] text-gray-400">When subtlety fails, our elite snipers deploy. One leap, one landing on the keyboard. Contract closed. No refunds.</p>
+                    <ul class="space-y-3">
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Long-Range Pounce Precision</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Claw-to-Face Deployment</li>
+                        <li class="text-[16px] text-slate-200"><i class="fa-solid fa-check text-[#16A34A] mr-3"></i> Post-Op Nap Included</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STATS BANNER -->
+        <section class="flex flex-wrap p-10 md:p-20 relative justify-center gap-8 md:gap-20 align-middle bg-gradient-to-r from-[#0B0F19] to-[#3B82F6] overflow-hidden">
+            <div class="absolute bg-white opacity-30 w-[200px] h-[200px] -top-20 -left-20 rounded-full"></div>
+            <div class="absolute bg-white opacity-20 w-[200px] h-[200px] -bottom-20 -right-20 rounded-full"></div>
+            <h2 class="flex flex-col text-[50px] md:text-[60px] font-bold text-white text-center">+500 <span class="text-[18px] md:text-[20px]">Contracts Executed</span></h2>
+            <h2 class="flex flex-col text-[50px] md:text-[60px] font-bold text-white text-center">+9 <span class="text-[18px] md:text-[20px]">Lives Per Agent</span></h2>
+            <h2 class="flex flex-col text-[50px] md:text-[60px] font-bold text-white text-center">0 <span class="text-[18px] md:text-[20px]">Witnesses Left</span></h2>
+            <h2 class="flex flex-col text-[50px] md:text-[60px] font-bold text-white text-center">+47 <span class="text-[18px] md:text-[20px]">Elite Operatives</span></h2>
+        </section>
+
+        <!-- TEAM -->
+        <section class="p-8 md:p-20">
+            <span class="text-center block">
+                <h2 class="text-[28px] md:text-[36px] font-bold text-gray-200">Meet the Fur-ocious Squad</h2>
+                <p class="text-[18px] md:text-[20px] text-gray-400 mb-5">Elite assassins. Impeccable grooming. Zero remorse.</p>
+            </span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-5">
+
+                <div class="group bg-[#E5E7EB] shadow-md rounded-lg border-[1.5px] border-white overflow-hidden hover:shadow-xl hover:shadow-slate-500 transition-shadow duration-500">
+                    <div class="relative bg-[#6f6f71] text-center flex items-center justify-center h-[200px] p-5 overflow-hidden">
+                        <img src="./images/1.jpg" class="w-[100%] object-cover absolute" alt="">
+                        <span class="absolute w-full h-full bg-[#111827ad] left-0 top-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-5 transition-opacity duration-300">
+                            <i class="fa-brands fa-facebook bg-[#3B82F6] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-instagram bg-[#7C3AED] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-linktree bg-[#16A34A] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                        </span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="font-bold text-lg">Shadow Paws</h2>
+                        <p class="text-[#3B82F6]">Lead Infiltration Agent</p>
+                        <p class="text-sm text-gray-500 mt-5">10 confirmed takedowns. Prefers entering through vents.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-[#E5E7EB] shadow-md rounded-lg border-[1.5px] border-white overflow-hidden hover:shadow-xl hover:shadow-slate-500 transition-shadow duration-500">
+                    <div class="relative bg-[#6f6f71] text-center flex items-center justify-center h-[200px] p-5 overflow-hidden">
+                        <img src="./images/4.jpg" class="w-[100%] object-cover absolute" alt="">
+                        <span class="absolute w-full h-full bg-[#111827ad] left-0 top-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-5 transition-opacity duration-300">
+                            <i class="fa-brands fa-facebook bg-[#3B82F6] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-instagram bg-[#7C3AED] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-linktree bg-[#16A34A] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                        </span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="font-bold text-lg">Void Stare Vicky</h2>
+                        <p class="text-[#3B82F6]">Psychological Ops Specialist</p>
+                        <p class="text-sm text-gray-500 mt-5">Masters the 3AM scream. Never breaks eye contact.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-[#E5E7EB] shadow-md rounded-lg border-[1.5px] border-white overflow-hidden hover:shadow-xl hover:shadow-slate-500 transition-shadow duration-500">
+                    <div class="relative bg-[#6f6f71] text-center flex items-center justify-center h-[200px] p-5 overflow-hidden">
+                        <img src="./images/2.avif" class="w-[100%] object-cover absolute" alt="">
+                        <span class="absolute w-full h-full bg-[#111827ad] left-0 top-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-5 transition-opacity duration-300">
+                            <i class="fa-brands fa-facebook bg-[#3B82F6] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-instagram bg-[#7C3AED] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-linktree bg-[#16A34A] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                        </span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="font-bold text-lg">Mittens the Merciless</h2>
+                        <p class="text-[#3B82F6]">Close-Range Pounce Expert</p>
+                        <p class="text-sm text-gray-500 mt-5">Zero misses. Leaves no claw marks. Mostly.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-[#E5E7EB] shadow-md rounded-lg border-[1.5px] border-white overflow-hidden hover:shadow-xl hover:shadow-slate-500 transition-shadow duration-500">
+                    <div class="relative bg-[#6f6f71] text-center flex items-center justify-center h-[200px] p-5 overflow-hidden">
+                        <img src="./images/3.jpg" class="w-[100%] object-cover absolute" alt="">
+                        <span class="absolute w-full h-full bg-[#111827ad] left-0 top-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-5 transition-opacity duration-300">
+                            <i class="fa-brands fa-facebook bg-[#3B82F6] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-instagram bg-[#7C3AED] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                            <i class="fa-brands fa-linktree bg-[#16A34A] text-white flex justify-center items-center p-5 text-[20px] rounded-full hover:opacity-70 transition-all"></i>
+                        </span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="font-bold text-lg">Sir Fluffington III</h2>
+                        <p class="text-[#3B82F6]">Extraction & Escape Planner</p>
+                        <p class="text-sm text-gray-500 mt-5">Never caught. Has used the cat door 847 times.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="bg-[#111827] p-8 md:p-14 flex flex-col lg:flex-row gap-10 lg:gap-20">
+            <form class="bg-[#1f2937] p-5 w-full lg:w-[50%] rounded-2xl space-y-5">
+                <h2 class="text-white font-bold text-[20px]">Request a Contract</h2>
+                <input type="text"
+                    class="w-full bg-[#374151] placeholder:text-[#7f9cac] p-2 py-3 rounded-lg border-none focus:outline-[#3B82F6] focus:border-none"
+                    placeholder="Your Codename">
+                <input type="email"
+                    class="w-full bg-[#374151] placeholder:text-[#7f9cac] p-2 py-3 rounded-lg border-none focus:outline-[#3B82F6] focus:border-none"
+                    placeholder="Encrypted Email">
+                <textarea
+                    class="w-full h-[150px] bg-[#374151] text-white placeholder:text-[#7f9cac] p-2 py-3 rounded-lg border-none focus:outline-[#3B82F6] focus:border-none"
+                    placeholder="Target details, allergies, preferred litter brand..."></textarea>
+                <button class="text-white bg-[#3B82F6] w-full p-2 py-3 rounded-xl hover:bg-[#2b61b8] transition-all">Send the Signal</button>
+            </form>
+            <div>
+                <h2 class="text-white font-bold mb-2 text-[20px]">Covert Contact Points</h2>
+                <ul class="space-y-5 items-start flex flex-col">
+                    <li class="flex justify-center items-center space-x-2">
+                        <i class="fa-solid fa-location-dot bg-slate-600 text-white text-[20px] flex justify-center items-center p-3 px-5 rounded-lg"></i>
+                        <span>
+                            <p class="text-[12px] text-white">Safe House</p>
+                            <h2 class="text-white font-bold">Underground, Cairo</h2>
+                        </span>
+                    </li>
+                    <li class="flex justify-center items-center space-x-2">
+                        <i class="fa-solid fa-phone bg-slate-600 text-white text-[20px] flex justify-center items-center p-3 px-5 rounded-lg"></i>
+                        <span>
+                            <p class="text-[12px] text-white">Encrypted Line</p>
+                            <h2 class="text-white font-bold">+20 100 MEOW OWO</h2>
+                        </span>
+                    </li>
+                    <li class="flex justify-center items-center space-x-2">
+                        <i class="fa-solid fa-envelope bg-slate-600 text-white text-[20px] flex justify-center items-center p-3 px-5 rounded-lg"></i>
+                        <span>
+                            <p class="text-[12px] text-white">Dark Web Mail</p>
+                            <h2 class="text-white font-bold">ops@killersonduty.cat</h2>
+                        </span>
+                    </li>
+                    <li class="bg-gradient-to-br from-[#0B0F19] to-[#3B82F6] w-full md:w-[500px] h-[200px] rounded-2xl flex justify-center items-center">
+                        <span class="text-white opacity-20 text-[20px]"><i class="fa-solid fa-map-location-dot"></i> Classified Location</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="border-t-[0.5px] border-[#2f4269] py-2 px-5 text-white flex flex-col sm:flex-row items-center justify-between gap-2 bg-[#111827]">
+            <h2>© 2026 Adel Mohammed. All targets reserved.</h2>
+            <p class="flex gap-5">
+                <i class="fa-brands fa-facebook text-[#4b90fd] hover:opacity-30 transition-all text-[20px]"></i>
+                <i class="fa-brands fa-instagram text-[#4b90fd] hover:opacity-30 transition-all text-[20px]"></i>
+                <i class="fa-brands fa-x-twitter text-[#4b90fd] hover:opacity-30 transition-all text-[20px]"></i>
+                <i class="fa-brands fa-tiktok text-[#4b90fd] hover:opacity-30 transition-all text-[20px]"></i>
+            </p>
+        </div>
+
+    </main>
+</body>
+
+</html>
