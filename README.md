@@ -1,90 +1,99 @@
+# 🐱 Killers On-Duty
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-CDN-06B6D4?logo=tailwindcss&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/Font%20Awesome-7.0.1-528DD7?logo=fontawesome&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222?logo=github&logoColor=white)
+
+A humorous, dark-themed landing page for a fictional cat assassin agency. *Silent paws, zero witnesses, and a very serious hairball policy.*
+
 <img width="1831" height="954" alt="image" src="https://github.com/user-attachments/assets/25d532c7-be2d-4a1a-bf61-d83e29b7491b" />
 
+---
 
-==============================================================
-KILLERS ON-DUTY (Killer-Cats-On-Duty)
-==============================================================
+## Overview
 
-DESCRIPTION
------------
-A humorous, responsive single-page landing website for
-"Killers On-Duty," a fictional cat assassin agency. The page
-presents the agency's services, statistics, team members and a
-contact form layout in a dark, tactical-style design.
-This is a satirical front-end project and not a real service.
+**Killers On-Duty** is a satirical single-page website that presents a made-up "elite feline operative" agency. It showcases the agency's fictional services, statistics, team members, and contact details through a modern, responsive layout built with plain HTML and Tailwind CSS.
 
-FEATURES
---------
-- Fixed header with desktop navigation and a mobile hamburger
-  menu (CSS-only, checkbox toggle)
-- Hero section with headline, highlights, call-to-action
-  buttons and a "Confirmed Eliminations" badge
-- "Our Covert Operations" section with three service cards:
-    * Silent Paw Infiltration
-    * Psychological Warfare
-    * The Clean Headshot
-- Statistics banner (+500 Contracts Executed, +9 Lives Per
-  Agent, 0 Witnesses Left, +47 Elite Operatives)
-- "Meet the Fur-ocious Squad" team section with four agents
-  (Shadow Paws, Void Stare Vicky, Mittens the Merciless,
-  Sir Fluffington III) and hover overlays with social icons
-- "Request a Contract" form layout and "Covert Contact Points"
-  section
+The project is a static front-end demo intended for practice and fun. All names, numbers, and services on the page are fictional.
+
+## Features
+
+- Fixed header with desktop navigation and a CSS-only mobile hamburger menu
+- Hero section with headline, highlights, call-to-action buttons, and a "Confirmed Eliminations" badge
+- **Our Covert Operations** section with three service cards:
+  - Silent Paw Infiltration
+  - Psychological Warfare
+  - The Clean Headshot
+- Statistics banner (Contracts Executed, Lives Per Agent, Witnesses Left, Elite Operatives)
+- **Meet the Fur-ocious Squad** team section with four agent cards and hover overlays showing social icons
+- **Request a Contract** form layout and **Covert Contact Points** section
 - Footer with copyright and social icons
 - Responsive layout using Tailwind CSS breakpoints
 
-TECHNOLOGIES USED
------------------
-- HTML5
-- Tailwind CSS (via CDN script: cdn.tailwindcss.com)
-- Font Awesome 7.0.1 (via cdnjs)
-- Hosted with GitHub Pages
+## Technologies
 
-No build tools, package manager or JavaScript files are used.
+| Technology | Usage |
+| --- | --- |
+| HTML5 | Page structure (`index.html`) |
+| [Tailwind CSS](https://tailwindcss.com/) | Styling, loaded via the CDN script (no build pipeline) |
+| [Font Awesome 7.0.1](https://fontawesome.com/) | Icons, loaded via cdnjs |
+| GitHub Pages | Hosting |
 
-INSTALLATION / SETUP
---------------------
-1. Clone the repository:
-   git clone https://github.com/adelmhmd77/Killer-Cats-On-Duty.git
-2. Open the project folder:
-   cd Killer-Cats-On-Duty
-3. Open index.html in any modern web browser.
+No JavaScript files, package manager, or build tools are used.
 
-An internet connection is required, because Tailwind CSS and
-Font Awesome are loaded from CDNs.
+## Getting Started
 
-USAGE
------
-- Open index.html locally, or visit the live website below.
-- Scroll through the sections: Home, Services, Stats, Team and
-  Contact.
-- To customize, edit index.html (content and Tailwind classes)
-  and replace the images in the images/ folder.
+### Prerequisites
 
-PROJECT STRUCTURE
------------------
+- A modern web browser
+- An internet connection (Tailwind CSS and Font Awesome are loaded from CDNs)
+
+### Installation
+
+```bash
+git clone https://github.com/adelmhmd77/Killer-Cats-On-Duty.git
+cd Killer-Cats-On-Duty
+```
+
+### Usage
+
+Open `index.html` directly in your browser, or serve the folder with any static file server. To customize the page, edit the content and Tailwind classes in `index.html` and replace the images in the `images/` folder.
+
+## Project Structure
+
+```text
 Killer-Cats-On-Duty/
-|-- images/       Images used by the page (1.jpg, 2.avif, 3.jpg,
-|                 4.jpg, 5.jpg)
-|-- index.html    Entire page (markup and Tailwind classes)
-|-- README.md     Repository readme
+├── images/
+│   ├── 1.jpg
+│   ├── 2.avif
+│   ├── 3.jpg
+│   ├── 4.jpg
+│   └── 5.jpg
+├── index.html
+└── README.md
+```
 
-NOTES
------
-- The contact form has no backend or submission handling.
-- Navigation links currently point to "#" (no section anchors).
-- All names, statistics, contact details and services are
-  fictional and used for humor.
+## Live Demo
 
-LIVE WEBSITE
-------------
-https://adelmhmd77.github.io/Killer-Cats-On-Duty/
+[View the live website](https://adelmhmd77.github.io/Killer-Cats-On-Duty/)
 
-GITHUB REPOSITORY
------------------
-https://github.com/adelmhmd77/Killer-Cats-On-Duty
+## Repository
 
-AUTHOR
-------
-Adel Mohammed
+[GitHub Repository](https://github.com/adelmhmd77/Killer-Cats-On-Duty)
 
+## License
+
+Not specified
+
+## Notes
+
+- This is a **static, frontend-only** project with no backend.
+- The **Request a Contract** form is a visual layout only and does not submit or store data.
+- Navigation links currently point to `#` and do not scroll to sections.
+- Contact details (address, phone number, email) and all statistics are fictional.
+- Tailwind CSS and Font Awesome are loaded from external CDNs, so the page requires internet access to render correctly.
+
+## Author
+
+**Adel Mohammed** ([@adelmhmd77](https://github.com/adelmhmd77))
